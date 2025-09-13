@@ -1,7 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
-import { useEffect } from 'react';
+import { useActionState, useEffect } from 'react';
+import { useFormStatus } from 'react-dom';
 import { generatePracticeSuggestions } from '@/app/dashboard/actions';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -28,7 +28,7 @@ function SubmitButton() {
 }
 
 export function PracticeForm() {
-  const [state, formAction] = useFormState(generatePracticeSuggestions, initialState);
+  const [state, formAction] = useActionState(generatePracticeSuggestions, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
