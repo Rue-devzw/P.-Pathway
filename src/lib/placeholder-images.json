@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "1",
+      "description": "A person playing a grand piano in a sunlit room.",
+      "imageUrl": "https://picsum.photos/seed/music1/600/400",
+      "imageHint": "piano music"
+    },
+    {
+      "id": "2",
+      "description": "A close-up of hands playing an acoustic guitar.",
+      "imageUrl": "https://picsum.photos/seed/music2/600/400",
+      "imageHint": "guitar player"
+    },
+    {
+      "id": "3",
+      "description": "A full drum kit on a stage with dramatic lighting.",
+      "imageUrl": "https://picsum.photos/seed/music3/600/400",
+      "imageHint": "drum kit"
+    },
+    {
+      "id": "4",
+      "description": "A violinist performing with passion.",
+      "imageUrl": "https://picsum.photos/seed/music4/600/400",
+      "imageHint": "violin concert"
+    },
+    {
+      "id": "5",
+      "description": "A person learning to play the piano from a tablet.",
+      "imageUrl": "https://picsum.photos/seed/music5/1200/800",
+      "imageHint": "online lesson"
+    }
+  ]
 }
