@@ -15,6 +15,11 @@ export function MainNav() {
       active: pathname === '/',
     },
     {
+      href: '/booking',
+      label: 'Booking',
+      active: pathname === '/booking',
+    },
+    {
       href: '/dashboard',
       label: 'Dashboard',
       active: pathname === '/dashboard',
