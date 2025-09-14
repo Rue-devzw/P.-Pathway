@@ -5,8 +5,8 @@ import { Toaster } from '@/components/ui/toaster';
 import { SiteHeader } from '@/components/site-header';
 
 export const metadata: Metadata = {
-  title: 'Melody Studio',
-  description: 'A comprehensive music lessons web app designed for interactive learning.',
+  title: 'Piano Pathway Academy',
+  description: 'Grow Play Inspire',
 };
 
 export default function RootLayout({

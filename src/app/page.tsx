@@ -11,7 +11,7 @@ export default async function Home() {
     <div className="container mx-auto px-4 py-8">
       <section className="mb-12 text-center">
         <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight md:text-5xl">
-          Find Your Rhythm
+          Grow Play Inspire
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
           Explore our wide range of music courses and start your journey to musical mastery today.
