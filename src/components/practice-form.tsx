@@ -43,36 +43,20 @@ export function PracticeForm() {
 
   return (
     <form action={formAction} className="space-y-6">
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-        <div className="space-y-2">
-          <Label htmlFor="instrument">Instrument</Label>
-          <Select name="instrument" defaultValue="Guitar">
-            <SelectTrigger id="instrument">
-              <SelectValue placeholder="Select an instrument" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="Guitar">Guitar</SelectItem>
-              <SelectItem value="Piano">Piano</SelectItem>
-              <SelectItem value="Drums">Drums</SelectItem>
-              <SelectItem value="Violin">Violin</SelectItem>
-            </SelectContent>
-          </Select>
-          {state.errors?.instrument && <p className="text-sm font-medium text-destructive">{state.errors.instrument[0]}</p>}
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="skillLevel">Skill Level</Label>
-          <Select name="skillLevel" defaultValue="Beginner">
-            <SelectTrigger id="skillLevel">
-              <SelectValue placeholder="Select your skill level" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="Beginner">Beginner</SelectItem>
-              <SelectItem value="Intermediate">Intermediate</SelectItem>
-              <SelectItem value="Advanced">Advanced</SelectItem>
-            </SelectContent>
-          </Select>
-           {state.errors?.skillLevel && <p className="text-sm font-medium text-destructive">{state.errors.skillLevel[0]}</p>}
-        </div>
+       <input type="hidden" name="instrument" value="Piano" />
+      <div className="space-y-2">
+        <Label htmlFor="skillLevel">Skill Level</Label>
+        <Select name="skillLevel" defaultValue="Beginner">
+          <SelectTrigger id="skillLevel">
+            <SelectValue placeholder="Select your skill level" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="Beginner">Beginner</SelectItem>
+            <SelectItem value="Intermediate">Intermediate</SelectItem>
+            <SelectItem value="Advanced">Advanced</SelectItem>
+          </SelectContent>
+        </Select>
+          {state.errors?.skillLevel && <p className="text-sm font-medium text-destructive">{state.errors.skillLevel[0]}</p>}
       </div>
 
       <div className="space-y-2">
@@ -80,7 +64,7 @@ export function PracticeForm() {
         <Textarea
           id="progress"
           name="progress"
-          placeholder="e.g., 'I've been working on the G, C, and D major chords, but my transitions are slow.'"
+          placeholder="e.g., 'I've been working on C major scales, but my left hand is slow.'"
           className="min-h-[100px]"
         />
         {state.errors?.progress && <p className="text-sm font-medium text-destructive">{state.errors.progress[0]}</p>}
