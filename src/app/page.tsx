@@ -9,11 +9,21 @@ export default async function Home() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <section className="mb-12 text-center">
-        <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight md:text-5xl">
+      <section className="relative mb-12 h-[50vh] min-h-[400px] overflow-hidden rounded-lg flex flex-col items-center justify-center text-center text-white">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+          src="https://videos.pexels.com/video-files/3845980/3845980-hd_1920_1080_25fps.mp4"
+          poster="https://images.pexels.com/photos/3845980/pexels-photo-3845980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        />
+        <div className="absolute top-0 left-0 w-full h-full bg-black/50 -z-10"></div>
+        <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight md:text-6xl">
           Grow Play Inspire
         </h1>
-        <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+        <p className="mx-auto max-w-2xl text-lg text-background/90">
           Explore our wide range of music courses and start your journey to musical mastery today.
         </p>
       </section>
