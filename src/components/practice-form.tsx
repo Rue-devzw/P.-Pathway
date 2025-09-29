@@ -43,7 +43,21 @@ export function PracticeForm() {
 
   return (
     <form action={formAction} className="space-y-6">
-       <input type="hidden" name="instrument" value="Piano" />
+       <div className="space-y-2">
+        <Label htmlFor="instrument">Instrument</Label>
+        <Select name="instrument" defaultValue="Piano">
+            <SelectTrigger id="instrument">
+                <SelectValue placeholder="Select your instrument" />
+            </SelectTrigger>
+            <SelectContent>
+                <SelectItem value="Piano">Piano</SelectItem>
+                <SelectItem value="Guitar">Guitar</SelectItem>
+                <SelectItem value="Drums">Drums</SelectItem>
+                <SelectItem value="Violin">Violin</SelectItem>
+            </SelectContent>
+        </Select>
+        {state.errors?.instrument && <p className="text-sm font-medium text-destructive">{state.errors.instrument[0]}</p>}
+      </div>
       <div className="space-y-2">
         <Label htmlFor="skillLevel">Skill Level</Label>
         <Select name="skillLevel" defaultValue="Beginner">

@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Icons } from './icons';
+import { getInstrumentIcon } from './icons';
 
 interface CourseCardProps {
   course: Course;
@@ -14,7 +14,7 @@ interface CourseCardProps {
 
 export function CourseCard({ course }: CourseCardProps) {
   const placeholderImage = PlaceHolderImages.find((img) => img.id === course.imageId);
-  const InstrumentIcon = Icons.Piano;
+  const InstrumentIcon = getInstrumentIcon(course.instrument);
 
   return (
     <Card className="flex h-full flex-col overflow-hidden transition-all hover:shadow-lg">
@@ -39,7 +39,7 @@ export function CourseCard({ course }: CourseCardProps) {
                 {course.skillLevel}
             </Badge>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <InstrumentIcon className="h-4 w-4" />
+                {InstrumentIcon && <InstrumentIcon className="h-4 w-4" />}
                 <span>{course.instrument}</span>
             </div>
         </div>

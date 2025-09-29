@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { SiteHeader } from '@/components/site-header';
 
 export const metadata: Metadata = {
-  title: 'Piano Pathway Academy',
+  title: 'Music Pathway Academy',
   description: 'Grow Play Inspire',
 };
 

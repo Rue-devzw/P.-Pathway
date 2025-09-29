@@ -12,7 +12,7 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const PersonalizedPracticeSuggestionsInputSchema = z.object({
-  instrument: z.string().describe('The instrument the student is learning.'),
+  instrument: z.enum(['Piano', 'Guitar', 'Drums', 'Violin']).describe('The instrument the student is learning.'),
   skillLevel: z.enum(['Beginner', 'Intermediate', 'Advanced']).describe('The student\'s skill level.'),
   progress: z.string().describe('The student\'s current progress in the course.'),
 });

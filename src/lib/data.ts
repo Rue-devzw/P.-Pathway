@@ -71,6 +71,26 @@ const courses: Course[] = [
       },
     ],
   },
+  {
+    id: '4',
+    slug: 'guitar-for-beginners',
+    title: 'Guitar for Beginners',
+    instrument: 'Guitar',
+    skillLevel: 'Beginner',
+    description: 'Learn basic chords, strumming, and your first songs on the guitar.',
+    longDescription: 'This course is perfect for anyone wanting to start playing the guitar. We will cover basic chords, strumming patterns, and guide you through learning your first few songs. No prior experience needed!',
+    imageId: '2',
+    modules: [
+      {
+        id: 'm4-1',
+        title: 'Module 1: Your First Chords',
+        lessons: [
+          { id: 'l4-1-1', title: 'Tuning Your Guitar', duration: 400, videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
+          { id: 'l4-1-2', title: 'Basic Strumming', duration: 550, videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
+        ],
+      },
+    ],
+  },
 ];
 
 export async function getCourses(): Promise<Course[]> {

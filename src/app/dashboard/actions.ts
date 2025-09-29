@@ -8,7 +8,7 @@ import {
 import { z } from 'zod';
 
 const practiceSchema = z.object({
-  instrument: z.string().min(1, 'Instrument is required.'),
+  instrument: z.enum(['Piano', 'Guitar', 'Drums', 'Violin']),
   skillLevel: z.enum(['Beginner', 'Intermediate', 'Advanced']),
   progress: z.string().min(10, 'Please describe your progress in at least 10 characters.'),
 });

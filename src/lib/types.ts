@@ -15,7 +15,7 @@ export type Course = {
   id: string;
   slug: string;
   title: string;
-  instrument: 'Piano';
+  instrument: 'Piano' | 'Guitar' | 'Drums' | 'Violin';
   skillLevel: 'Beginner' | 'Intermediate' | 'Advanced';
   description: string;
   longDescription: string;

@@ -5,8 +5,8 @@ import { Icons } from './icons';
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2" prefetch={false}>
-      <Icons.Piano className="h-6 w-6 text-primary" />
-      <span className="font-headline text-xl font-bold">Piano Pathway Academy</span>
+      <Music2 className="h-6 w-6 text-primary" />
+      <span className="font-headline text-xl font-bold">Music Pathway Academy</span>
     </Link>
   );
 }
