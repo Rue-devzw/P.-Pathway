@@ -33,21 +33,35 @@ export function BookingForm() {
     
     setIsLoading(true);
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    // Simulate pre-processing before redirect
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    const formattedDate = format(date, 'PPP');
+    const message = `New Lesson Booking Request:\n\nName: ${name}\nEmail: ${email}\nLesson Type: ${lessonType}\nDate: ${formattedDate}\nTime: ${time}`;
+
+    // WhatsApp
+    const whatsappNumber = '+263713075197';
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    // Email
+    const recipientEmail = 'takundakusakadza25@gmail.com';
+    const emailSubject = `New Lesson Booking: ${name}`;
+    const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(message)}`;
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+    
+    // Open email client
+    window.location.href = mailtoUrl;
 
     setIsLoading(false);
     
     toast({
-      title: 'Booking Confirmed!',
-      description: `Your ${lessonType} lesson is booked for ${format(date, 'PPP')} at ${time}. A confirmation has been sent to ${email}.`,
+      title: 'Booking request prepared!',
+      description: `Please send the pre-filled message in WhatsApp and your email client.`,
     });
 
-    // Reset form
-    setDate(new Date());
-    setTime('');
-    setName('');
-    setEmail('');
+    // We don't reset the form so the user can see the data
   };
 
   const availableTimes = [
