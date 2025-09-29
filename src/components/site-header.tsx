@@ -3,6 +3,7 @@ import { User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/logo';
 import { MainNav } from '@/components/main-nav';
+import { ThemeToggle } from './theme-toggle';
 
 export function SiteHeader() {
   return (
@@ -12,6 +13,7 @@ export function SiteHeader() {
         <MainNav />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
+            <ThemeToggle />
             <Button variant="ghost" size="icon">
               <User className="h-5 w-5" />
               <span className="sr-only">User Profile</span>
