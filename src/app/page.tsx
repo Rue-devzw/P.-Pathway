@@ -20,10 +20,10 @@ export default async function Home() {
           poster="https://images.pexels.com/photos/3845980/pexels-photo-3845980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 -z-10"></div>
-        <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight md:text-6xl">
+        <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight md:text-6xl animate-fade-in-down">
           Grow Play Inspire
         </h1>
-        <p className="mx-auto max-w-2xl text-lg text-background/90">
+        <p className="mx-auto max-w-2xl text-lg text-background/90 animate-fade-in-up">
           Explore our wide range of music courses and start your journey to musical mastery today.
         </p>
       </section>
