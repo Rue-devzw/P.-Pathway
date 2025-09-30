@@ -29,15 +29,23 @@ export default async function Home() {
       </section>
 
       <section>
-        <h2 className="mb-6 font-headline text-2xl font-semibold md:text-3xl">
-          Popular Courses
-        </h2>
+        <div className='flex justify-between items-center mb-6'>
+          <h2 className="font-headline text-2xl font-semibold md:text-3xl">
+            Popular Courses
+          </h2>
+          <Button asChild variant="outline" className="group hidden sm:inline-flex">
+            <Link href="#">
+              Browse All Courses
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </Button>
+        </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {courses.map((course) => (
+          {courses.slice(0, 4).map((course) => (
             <CourseCard key={course.id} course={course} />
           ))}
         </div>
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center sm:hidden">
           <Button asChild size="lg" className="group">
             <Link href="#">
               Browse All Courses

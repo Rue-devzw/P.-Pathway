@@ -3,31 +3,31 @@
     {
       "id": "1",
       "description": "A person playing a grand piano in a sunlit room.",
-      "imageUrl": "https://picsum.photos/seed/music1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1520523839598-bd0352497989?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "piano music"
     },
     {
       "id": "2",
       "description": "A close-up of hands playing an acoustic guitar.",
-      "imageUrl": "https://picsum.photos/seed/music2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "guitar player"
     },
     {
       "id": "3",
       "description": "A full drum kit on a stage with dramatic lighting.",
-      "imageUrl": "https://picsum.photos/seed/music3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1531923483939-75e18b0600a7?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "drum kit"
     },
     {
       "id": "4",
       "description": "A violinist performing with passion.",
-      "imageUrl": "https://picsum.photos/seed/music4/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1612225330842-933a4a733334?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "violin concert"
     },
     {
       "id": "5",
-      "description": "A person learning to play the piano from a tablet.",
-      "imageUrl": "https://picsum.photos/seed/music5/1200/800",
+      "description": "A person learning to play an instrument from a tablet.",
+      "imageUrl": "https://images.unsplash.com/photo-1557999696-3c588f7243c2?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "online lesson"
     }
   ]
