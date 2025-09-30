@@ -17,7 +17,7 @@ export default async function Home() {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover -z-10"
           src="/videos/hero-video.mp4"
-          poster="/images/hero-poster.jpeg"
+          poster="/images/hero-poster.webp"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 -z-10"></div>
         <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight md:text-6xl animate-fade-in-down">

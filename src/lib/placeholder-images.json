@@ -3,31 +3,31 @@
     {
       "id": "1",
       "description": "A person playing a grand piano in a sunlit room.",
-      "imageUrl": "/images/course-piano.jpg",
+      "imageUrl": "/images/course-piano.webp",
       "imageHint": "piano music"
     },
     {
       "id": "2",
       "description": "A close-up of hands playing an acoustic guitar.",
-      "imageUrl": "/images/course-guitar.jpg",
+      "imageUrl": "/images/course-guitar.webp",
       "imageHint": "guitar player"
     },
     {
       "id": "3",
       "description": "A full drum kit on a stage with dramatic lighting.",
-      "imageUrl": "/images/course-drums.jpg",
+      "imageUrl": "/images/course-drums.webp",
       "imageHint": "drum kit"
     },
     {
       "id": "4",
       "description": "A violinist performing with passion.",
-      "imageUrl": "/images/course-violin.jpg",
+      "imageUrl": "/images/course-violin.webp",
       "imageHint": "violin concert"
     },
     {
       "id": "5",
       "description": "A person learning to play an instrument from a tablet.",
-      "imageUrl": "/images/lesson-placeholder.jpg",
+      "imageUrl": "/images/lesson-placeholder.webp",
       "imageHint": "online lesson"
     }
   ]
