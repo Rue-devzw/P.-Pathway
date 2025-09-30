@@ -16,8 +16,8 @@ export default async function Home() {
           muted
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-          src="https://videos.pexels.com/video-files/3845980/3845980-hd_1920_1080_25fps.mp4"
-          poster="https://images.pexels.com/photos/3845980/pexels-photo-3845980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src="/videos/hero-video.mp4"
+          poster="/images/hero-poster.jpeg"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 -z-10"></div>
         <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight md:text-6xl animate-fade-in-down">

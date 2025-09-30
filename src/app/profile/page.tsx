@@ -8,7 +8,7 @@ import { Medal, Music, Star } from "lucide-react";
 const user = {
   name: 'Alex Doe',
   email: 'alex.doe@example.com',
-  avatarUrl: 'https://picsum.photos/seed/101/200/200',
+  avatarUrl: '/images/avatar-placeholder.png',
   isSubscribed: true,
   progress: [
     { courseTitle: 'Piano Fundamentals', completedLessons: 5, totalLessons: 5 },
