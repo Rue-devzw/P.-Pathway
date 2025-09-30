@@ -23,9 +23,11 @@ export default async function Home() {
         <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight md:text-6xl animate-fade-in-down">
           Grow Play Inspire
         </h1>
-        <p className="mx-auto max-w-2xl text-lg text-background/90 animate-fade-in-up">
-          Explore our wide range of music courses and start your journey to musical mastery today.
-        </p>
+        <div className="w-full overflow-hidden">
+          <p className="mx-auto max-w-2xl text-lg text-background/90 whitespace-nowrap animate-marquee">
+            Explore our wide range of music courses and start your journey to musical mastery today.
+          </p>
+        </div>
       </section>
 
       <section>

@@ -114,6 +114,10 @@ export default {
                 opacity: '1',
                 transform: 'translateY(0)'
             }
+        },
+        'marquee': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
         }
       },
       animation: {
@@ -121,6 +125,7 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 1s ease-out',
         'fade-in-down': 'fade-in-down 0.5s ease-out',
+        'marquee': 'marquee 25s linear infinite',
       },
     },
   },
